@@ -7,6 +7,7 @@ import ImageAnnotation from './modules/ImageAnnotation';
 import BitSelector from './modules/BitSelector';
 import Buffer from './modules/Buffer';
 import Button from './modules/Button';
+import Comparator from './modules/Comparator';
 import ConstantVal from './modules/ConstantVal';
 import ControlledInverter from './modules/ControlledInverter';
 import Counter from './modules/Counter';
@@ -84,6 +85,7 @@ export default function setupModules() {
         Buffer,
         ControlledInverter,
         Adder,
+        Comparator,
         verilogMultiplier,
         verilogDivider,
         verilogPower,

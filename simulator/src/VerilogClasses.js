@@ -12,6 +12,7 @@ import NotGate from './modules/NotGate';
 import Text from './modules/Text';
 import TriState from './modules/TriState';
 import Buffer from './modules/Buffer';
+import Comparator from './modules/Comparator';
 import ControlledInverter from './modules/ControlledInverter';
 import Adder from './modules/Adder';
 import verilogMultiplier from './modules/verilogMultiplier';
