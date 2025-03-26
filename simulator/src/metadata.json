@@ -60,7 +60,8 @@
         "Dlatch",
         "TB_Input",
         "TB_Output",
-        "ForceGate"
+        "ForceGate",
+        "ShiftRegister"
     ],
     "annotationList": [
         "Text",
@@ -153,7 +154,8 @@
             {"name":"Rom", "label":"ROM"},
             {"name":"RAM", "label":"RAM"},
             {"name":"verilogRAM", "label":"Verilog RAM"},
-            {"name":"EEPROM", "label":"EEPROM"}
+            {"name":"EEPROM", "label":"EEPROM"},
+            {"name":"ShiftRegister", "label":"ShiftRegister"}
         ],
         "Annotation": [
             {"name":"Rectangle", "label":"Rectangle"},
