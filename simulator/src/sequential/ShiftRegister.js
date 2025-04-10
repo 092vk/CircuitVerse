@@ -36,6 +36,7 @@ export default class ShiftRegister extends CircuitElement {
     }
 
     customDraw() {
+        // custom shape for the shift register
         const ctx = simulationArea.context;
         ctx.beginPath();
         ctx.strokeStyle = 'black';
@@ -59,13 +60,17 @@ export default class ShiftRegister extends CircuitElement {
 
     resolve() {
         if (this.clockInp.value === 1 && this.prevClockState === 0) {
+            // this checks for rising edge of the clock signal
             this.state.pop();
+            // remove the last bit
             this.state.unshift(this.dataInp.value || 0);
+            // add the last bit shifting towards left
         }
         this.prevClockState = this.clockInp.value;
 
         for (let i = 0; i < this.bitWidth; i++) {
             this.outputs[i].value = this.state[i];
+            // each output is connected to each state bit
         }
     }
 }
